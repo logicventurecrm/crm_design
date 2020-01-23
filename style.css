@@ -18,7 +18,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .sidenav-links:hover{
   color: #000000;
 }
-
+#main{
+  background-color: #002C47;
+  padding: 20px 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+#main label,h1{
+  color:#fff;
+}
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Add Client</title>
+    <title>Add Switch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,57 +35,47 @@
     <div class="col-lg-6">
 
         <div id="main">
-            <h1 class="text-center">Add Client</h1>
+            <h1 class="text-center">Add Switch</h1>
             <form class="form-group">
 
                 <div class="row">
                 <div class="col-lg-6">
-                    <label>First Name &#8727;</label>
-                    <input type="text" name="fname" class="form-control" placeholder="Enter Fisrt Name" required>
+                    <label>Name &#8727;</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
                 </div>
                 <div class="col-lg-6">
-                    <label>Last Name</label>
-                    <input type="text" name="lname" class="form-control" placeholder="Enter Last Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label>Email&#8727;</label>
-                    <input type="email" name="email" class="form-control" placeholder="Enter Email " required>
-                </div>
-                <div class="col-lg-6">
-                    <label>Phone Number&#8727;</label>
-                    <input type="number" name="phone" class="form-control" placeholder="Enter Phone No." required>
+                    <label>IP</label>
+                    <input type="text" name="ip" class="form-control" placeholder="Enter IP" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <label>Company Name</label>
-                    <input type="text" name="cname" class="form-control" placeholder="Enter Company Name">
+                    <label>Ami User&#8727;</label>
+                    <input type="text" name="ami_user" class="form-control" placeholder="Enter Ami User " required>
                 </div>
                 <div class="col-lg-6">
-                    <label>Address&#8727;</label>
-                    <input type="text" name="address" class="form-control" placeholder="Enter Address" required>
+                    <label>Ami Password&#8727;</label>
+                    <input type="password" name="password" class="form-control" placeholder="Enter Ami Password" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <label>Country</label>
-                    <input type="text" name="country" class="form-control" placeholder="Enter Country Name">
+                    <label>CPS</label>
+                    <input type="number" name="cps" class="form-control" placeholder="Enter CPS">
+                </div>
+                <div class="col-lg-6">
+                    <label>Call Limit&#8727;</label>
+                    <input type="number" name="call_limit" class="form-control" placeholder="Enter Call Limit" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Description</label>
+                    <input type="text" name="description" class="form-control" placeholder="Enter Description">
                 </div>
                 <div class="col-lg-6">
                     <label>State</label>
                     <input type="text" name="state" class="form-control" placeholder="Enter State">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label>Call Limit&#8727;</label>
-                    <input type="number" name="climit" class="form-control" placeholder="Enter Call Limit" required>
-                </div>
-                <div class="col-lg-6">
-                    <label>Pacing&#8727;</label>
-                    <input type="number" name="pacing" class="form-control" placeholder="Enter Pacing" required>
                 </div>
             </div>
             <div class="row">
@@ -99,14 +89,9 @@
                       </select>
                 </div>
             </div>
+        
             <div class="row">
-                <div class="col-lg-12">
-                <label for="comment">Description:</label>
-                <textarea class="form-control" rows="3" id="comment" placeholder="Enter Description"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 mt-2 text-right">
+                <div class="col-lg-6 mt-2 text-right">
                 <input type="submit" name="submit" value="Create" class="btn btn-primary">
             </div>
             

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Edit Client</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/CSS/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-top w3-left-align w3-large" style="background-color: #002C47; color: white;">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button " ><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white" style="float: right;"><img src="images/user.png" width="25px" height="25px" style="margin-right: 10px;">Settings</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white" style="float: right; background-color: green;">Notifications</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left" id="mySidebar" style="padding-left: 20px; background-color: #F4F5F7;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#"> <input type="button" value="+ Create" name="btn_create" style="background-color: coral; width: auto; color: white; margin-top: 20px; margin-right: 10px;"></input></a><br>
+  <a href="#" class="sidenav-links"><img src="images/Dashboard.png" width="25px" height="20px"> &nbsp;Dashboard</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Clients.png" width="25px" height="20px">&nbsp;Clients</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Campaign.png" width="25px" height="20px">&nbsp;Compaign</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Tariff.png" width="25px" height="20px">&nbsp;Tarrif</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Sound Library.png" width="25px" height="20px">&nbsp;Sound Library</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Phonebook.png" width="25px" height="20px">&nbsp;Phone Book</a><br>
+  <a href="#" class="sidenav-links"><img src="images/Report.png" width="25px" height="20px">&nbsp;Reports</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+    <div class="w3-row w3-padding-64">
+        
+            <form class="form-group" style=" background-color: #002C47;
+            padding: 20px 20px;
+            margin-top: 0px;
+            margin-left: 40px;
+            margin-right: 40px;
+            border-radius: 15px;
+            color: white;
+            opacity: 0.9;">
+            <p style="font-size: xx-large; text-align: center;">Edit Client</p> <br>
+                <div class="row">
+                    <div class="col">
+                        <label>First Name &#8727;</label>
+                    <input type="text" name="fname" class="form-control" placeholder="Enter Fisrt Name" required>
+                    </div>
+                    <div class="col" >
+                        <label>Last Name</label>
+                        <input type="text" name="lname" class="form-control" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Email&#8727;</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter Email " required>
+                    </div>
+                    <div class="col" >
+                        <label>Phone Number&#8727;</label>
+                        <input type="number" name="phone" class="form-control" placeholder="Enter Phone No." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Company Name</label>
+                        <input type="text" name="cname" class="form-control" placeholder="Enter Company Name">
+                    </div>
+                    <div class="col" >
+                        <label>Address&#8727;</label>
+                    <input type="text" name="address" class="form-control" placeholder="Enter Address" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Country</label>
+                        <input type="text" name="country" class="form-control" placeholder="Enter Country Name">
+                    </div>
+                    <div class="col" >
+                        <label>State</label>
+                    <input type="text" name="state" class="form-control" placeholder="Enter State">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Call Limit&#8727;</label>
+                        <input type="number" name="climit" class="form-control" placeholder="Enter Call Limit" required>
+                    </div>
+                    <div class="col" >
+                        <label>Pacing&#8727;</label>
+                        <input type="number" name="pacing" class="form-control" placeholder="Enter Pacing" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label>Status</label>
+                    <select class="custom-select" id="sel1">
+                        <option>Active</option>
+                        <option>In-Active</option>
+                        <option>Pending</option>
+                        <option>Suspended</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="comment">Description:</label>
+                        <textarea class="form-control" rows="3" id="comment" placeholder="Enter Description"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="col-lg-12 mt-2 text-right">
+                            <input type="submit" name="submit" value="Create" class="btn btn-primary">
+                    </div>
+                </div>
+               
+            </form>
+
+
+
+        </div>
+        
+      </div>
+    
+
+  
+  
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
