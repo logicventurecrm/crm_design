@@ -7,7 +7,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   float: none;
   height: inherit;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 
 .sidenav-links{
@@ -17,7 +19,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 }
 .sidenav-links:hover{
   color: #000000;
+  text-decoration: none;
 }
+
 #main{
   background-color: #002C47;
   padding: 20px 20px;

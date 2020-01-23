@@ -7,7 +7,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   float: none;
   height: inherit;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 
 .sidenav-links{
@@ -17,9 +19,32 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 }
 .sidenav-links:hover{
   color: #000000;
+  text-decoration: none;
 }
 
+#main{
+  background-color: #002C47;
+  padding: 20px 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+#main label,h1{
+  color:#fff;
+}
+.header-links{
+  text-decoration: none;
+  height: 43px;
+  margin-right: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+}
+.header-links:hover{
+  text-decoration: none;
+  color: #B62544;
 
+}
 
 
 
