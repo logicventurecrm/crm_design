@@ -4,11 +4,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   z-index: 3;
   width: 200px;
   top: 43px;
+  padding-top: 5px;
   bottom: 0;
   float: none;
-  padding: 10px 10px;
   height: inherit;
   background-color: #F4F5F7;
+}
+.w3-sidebar li{
+  list-style-type: none;
+  padding-left: 20px;
+  
+}
+.w3-sidebar li i{
+  margin-right: 10px;
 }
 * {
   box-sizing: border-box;
@@ -20,12 +28,9 @@ margin-left: 200px;
 
 .sidenav-links{
   text-decoration: none;
-  padding-left: 20px;
-  font-size: 15px;
+
+  font-size: 17px;
  color: #818181;
-}
-.sidenav-links i{
-  padding-top: 15px;
 }
 
 .sidenav-links:hover{
@@ -77,10 +82,7 @@ margin-left: 200px;
   font-size: x-large;
   font-weight: bold;
 }
-/* when screen size is small*/
-#myOverlay{
 
-}
 
 
 
@@ -97,6 +99,11 @@ margin-left: 200px;
 #form_content p{
   font-size: xx-large;
    text-align: center;
+}
+
+#modal_icon_X{
+color: #fff;
+opacity: 0.9;
 }
 
 

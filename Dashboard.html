@@ -38,13 +38,13 @@
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding w3-hover-black w3-hide-large" title="Close Menu">
   </a>
-  <a href="#" class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-group"></i>Clients</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-send"></i>Compaign</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-database"></i>Tarrif</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-music"></i>Sound Library</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</a><br>
-  <a href="#" class="sidenav-links"><i class="fa fa-line-chart"></i>Reports</a>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-line-chart"></i>Reports</li></a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -81,9 +81,10 @@
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            <input type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">
-            <input type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">
-            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2">
+            
+            <button type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">Edit</button>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
           </td>  
         </tr>
 
@@ -95,9 +96,9 @@
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            <input type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">
-            <input type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">
-            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2">
+            <button type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">Edit</button>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
           </td> 
         </tr>
         <tr>
@@ -108,15 +109,47 @@
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            <input type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">
-            <input type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">
-            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2">
+            
+            <button type="button" value="Edit" name="add" class="btn btn-default w3-flat-belize-hole btn-sm mb-2">Edit</button>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
           </td>
         </tr>
       </tbody>
     </table>
-  </div></div>>
-  
+  </div>
+</div>
+<!--Modal Added 24-01-2020-->
+<div class="modal fade" id="add_balance_Modal" role="dialog">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header w3-flat-midnight-blue">
+        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
+        
+      </div>
+      <div class="modal-body w3-ios-light-grey ">
+        <div class="row">
+
+          <div class="col-12">
+            <label>Amount</label>
+        <input type="text" name="name" class="form-control w3-round-xxlarge" placeholder="Enter Amount">
+        </div>
+        <div class="col-12" >
+            <label>Balance</label>
+            <input type="text" name="lname" class="form-control" placeholder="Enter Balance">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>Description</label>
+            <textarea class="form-control" rows="3" placeholder=" Enter Description"></textarea>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer w3-flat-midnight-blue">
+        <button type="button" class="w3-button w3-red w3-round-xlarge"  data-dismiss="modal">Add</button>
+      </div>
 <!-- END MAIN -->
 </div>
 
