@@ -7,43 +7,113 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/CSS/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
 
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-top w3-left-align w3-large" style="background-color: #002C47; color: white;">
+  <div class="w3-bar w3-top w3-left-align w3-large w3-flat-midnight-blue">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="header-links " ><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
-    <a href="#" class="header-links " style="float: right;"><img src="images/user.png" width="25px" height="25px" style="margin-right: 10px;">Settings</a>
-    <a href="#" class="header-links " style="float: right; background-color: green;">Notifications</a>
+    <a href="#" class="header-links-logo "><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
+    <a href="#" class="header-links " ><i class="fa fa-bell-o"></i></a>
+    <a href="#" class="header-links " ><i class="fa fa-cogs"></i></a>
   </div>
 </div>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left" id="mySidebar" style="padding-left: 20px; background-color: #F4F5F7;">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
-  <a href="#"> <input type="button" value="+ Create" name="btn_create" style="background-color: coral; width: auto; color: white; margin-top: 20px; margin-right: 10px;"></input></a><br>
-  <a href="#" class="sidenav-links"><img src="images/Dashboard.png" width="25px" height="20px"> &nbsp;Dashboard</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Clients.png" width="25px" height="20px">&nbsp;Clients</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Campaign.png" width="25px" height="20px">&nbsp;Compaign</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Tariff.png" width="25px" height="20px">&nbsp;Tarrif</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Sound Library.png" width="25px" height="20px">&nbsp;Sound Library</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Phonebook.png" width="25px" height="20px">&nbsp;Phone Book</a><br>
-  <a href="#" class="sidenav-links"><img src="images/Report.png" width="25px" height="20px">&nbsp;Reports</a>
+  <a href="#"> <button class="btn btn-default w3-flat-pumpkin btn-lg mb-3 mt-3 btn-color-primary">+ Create</button><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-dashboard"></i> &nbsp;Dashboard</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-group"></i>&nbsp;Clients</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-send"></i>&nbsp;Compaign</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-database"></i>&nbsp;Tarrif</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-music"></i>&nbsp;Sound Library</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-address-book-o"></i>&nbsp;Phone Book</a><br>
+  <a href="#" class="sidenav-links"><i class="fa fa-line-chart"></i>&nbsp;Reports</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" id="w3_main" >
 
+  <div class="table-head">
+    <p>Add Client</p> 
+    <div class="row">
+      <div class="col-6 mb-3">
+        <button class="btn btn-primary " name="add_button">Add</button>
+      </div>
+      <div class="col-6">
+        <input class="right" type="search" name="search" value="Search">
+      </div>
+    </div>         
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Email</th>
+          <th>Phone No.</th>
+          <th>Country</th>
+          <th>Status</th>
+          <th>Created</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            <input type="button" value="Edit" name="add" class="btn btn-primary btn-sm mb-2">
+            <input type="button" value="Delete" name="delete" class="btn btn-danger btn-sm mb-2">
+            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-warning btn-sm mb-2">
+          </td>  
+        </tr>
 
-  
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            <input type="button" value="Edit" name="add" class="btn btn-primary btn-sm mb-2">
+            <input type="button" value="Delete" name="delete" class="btn btn-danger btn-sm mb-2">
+            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-warning btn-sm mb-2">
+          </td>  
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            <input type="button" value="Edit" name="add" class="btn btn-primary btn-sm mb-2">
+            <input type="button" value="Delete" name="delete" class="btn btn-danger btn-sm mb-2">
+            <input type="button" value="Add Balance" name="add_balnace" class="btn btn-warning btn-sm mb-2">
+          </td>  
+        </tr>
+      </tbody>
+    </table>
+  </div></div>>
   
 <!-- END MAIN -->
 </div>

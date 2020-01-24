@@ -1,4 +1,5 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -9,6 +10,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 }
 * {
   box-sizing: border-box;
+}
+#w3_main{
+margin-left: 250px;
 }
 
 
@@ -37,13 +41,54 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: 43px;
   margin-right: 10px;
   padding: 10px 10px;
-  text-align: center;
+  float: right;
   color: white;
+}
+.header-links-logo{
+  text-decoration: none;
+  height: 43px;
+  float: center;
+  margin-right: 10px;
+  padding: 10px 10px;
+  color: white;
+}
+.header-links-logo:hover{
+  text-decoration: none;
 }
 .header-links:hover{
   text-decoration: none;
-  color: #B62544;
+  font-size: large;
 
+}
+.table-head{
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.table-head p{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#mysidebar{
+  padding-left: 20px;
+   background-color: #F4F5F7;
+}
+
+#form_content{
+  background-color: #002C47;
+  padding: 20px 20px;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.9;
+}
+#form_content p{
+  font-size: xx-large;
+   text-align: center;
 }
 
 
