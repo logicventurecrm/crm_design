@@ -2,25 +2,32 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 .w3-sidebar {
   z-index: 3;
-  width: 250px;
+  width: 200px;
   top: 43px;
   bottom: 0;
   float: none;
+  padding: 10px 10px;
   height: inherit;
+  background-color: #F4F5F7;
 }
 * {
   box-sizing: border-box;
 }
 #w3_main{
-margin-left: 250px;
+margin-left: 200px;
 }
 
 
 .sidenav-links{
   text-decoration: none;
- padding-top: 10px;
+  padding-left: 20px;
+  font-size: 15px;
  color: #818181;
 }
+.sidenav-links i{
+  padding-top: 15px;
+}
+
 .sidenav-links:hover{
   color: #000000;
   text-decoration: none;
@@ -62,7 +69,7 @@ margin-left: 250px;
 }
 .table-head{
   margin-top: 150px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
@@ -70,11 +77,12 @@ margin-left: 250px;
   font-size: x-large;
   font-weight: bold;
 }
+/* when screen size is small*/
+#myOverlay{
 
-#mysidebar{
-  padding-left: 20px;
-   background-color: #F4F5F7;
 }
+
+
 
 #form_content{
   background-color: #002C47;
