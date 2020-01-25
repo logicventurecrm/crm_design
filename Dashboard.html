@@ -63,7 +63,8 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Firstname</th>
+          <th>Id</th>
+          <th>Name</th>
           <th>Email</th>
           <th>Phone No.</th>
           <th>Country</th>
@@ -74,6 +75,7 @@
       </thead>
       <tbody>
         <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
           <td>John</td>
           <td>john@example.com</td>
           <td>8732984798</td>
@@ -89,6 +91,7 @@
         </tr>
 
         <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000002</a></td>
           <td>John</td>
           <td>john@example.com</td>
           <td>8732984798</td>
@@ -102,6 +105,7 @@
           </td> 
         </tr>
         <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000003</a></td>
           <td>John</td>
           <td>john@example.com</td>
           <td>8732984798</td>
@@ -124,10 +128,11 @@
   <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header w3-flat-midnight-blue">
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Add Balance</h4>
         <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
         
       </div>
+
       <div class="modal-body w3-ios-light-grey ">
         <div class="row">
 
@@ -147,12 +152,105 @@
         </div>
         </div>
       </div>
+
       <div class="modal-footer w3-flat-midnight-blue">
         <button type="button" class="w3-button w3-red w3-round-xlarge"  data-dismiss="modal">Add</button>
       </div>
-<!-- END MAIN -->
+
+  </div>
 </div>
 
+</div>
+
+
+<!--Details Modal-->
+<div class="modal fade " id="details_Modal" role="dialog">
+  <div class=" modal-dialog modal-lg ">
+    <div class="modal-content ">
+      <div class="modal-header w3-flat-midnight-blue">
+        <h4 class="modal-title">Details</h4>
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
+        
+      </div>
+
+      <div class="modal-body w3-ios-light-grey ">
+        <table class="table table-responsive " id="details_table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Company Name</th>
+              <th>Description</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>John</td>
+              <td>john@example.com</td>
+              <td>8312901291</td>
+              <td>Logic Venture</td>
+              <td>Test</td>
+              
+            </tr>
+          </tbody>
+          <thead >
+
+            <tr>
+              <th>Address</th>
+              <th>Pin Code</th>
+              <th>Call Limit</th>
+              <th>Pacing</th>
+              <th>Balance</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                R-1, Himalaya Tanishq, Raj nagar extension, Ghaziabad
+                </td>
+              <td>110053</td>
+              <td>50</td>
+              <td>5</td>
+              <td>4500</td>
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr>
+              <th>Country</th>
+              <th>State</th>
+              <th>City</th>
+              <th>Status</th>
+              <th>Created</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>India</td>
+              <td>Delhi</td>
+              <td>Delhi</td>
+              <td>Active</td>
+              <td>25-01-2020 11:07 AM</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+        
+      </div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- END MAIN -->
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
