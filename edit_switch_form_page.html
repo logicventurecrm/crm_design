@@ -19,9 +19,9 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-top w3-left-align w3-large w3-flat-midnight-blue">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="header-links-logo "><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
-    <a href="#" class="header-links " ><i class="fa fa-cogs"></i></a>
+    <a href="javascript:void(0)" class="header-links " onclick="openRightMenu()" ><i class="fa fa-cogs"></i></a>
     <a href="#" class="header-links " ><i class="fa fa-user-circle-o"></i></a>
     <a href="#" class="header-links " ><i class="fa fa-bell-o"></i></a>
     
@@ -52,7 +52,7 @@
     <div class="w3-row w3-padding-64">
         
             <form class="form-group" id="form_content">
-            <p >Add Switch</p> <br>
+              <h5 >Edit Switch</h5>
                 <div class="row">
                     <div class="col">
                         <label>Name</label>
@@ -112,7 +112,18 @@
         
       </div>
     
+<!--right Sidebar-->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-padding">Close &times;</button>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i> Account Settings</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
+  <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a><br>
+</div>
+</div>
 
+
+<!--right sidebar End-->
   
   
 <!-- END MAIN -->
@@ -140,6 +151,14 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
 }
 </script>
 

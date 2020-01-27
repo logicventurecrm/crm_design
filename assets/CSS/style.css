@@ -25,6 +25,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif;}
 margin-left: 200px;
 }
 
+#rightMenu{
+  display:none;
+  right:0;
+}
+
 
 .sidenav-links{
   text-decoration: none;
@@ -59,10 +64,14 @@ margin-left: 200px;
 .header-links-logo{
   text-decoration: none;
   height: 43px;
-  float: center;
+  float: left;
   margin-right: 10px;
   padding: 10px 10px;
   color: white;
+}
+.header-links-logo img{
+ margin-right: 10px;
+
 }
 .header-links-logo:hover{
   text-decoration: none;
@@ -86,6 +95,110 @@ margin-left: 200px;
 
 
 @media only screen and (max-width: 600px) {
+  .w3-sidebar{
+    top: 48px;
+  }
+  .header-links{
+    text-decoration: none;
+    height: 48px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    float: right;
+    color: white;
+  }
+  .w3-bar .w3-bar-item {
+    padding: 8px 8px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+  .col {
+    flex-basis: auto;
+  
+  }
+
+  .w3-sidebar li i{
+    margin-right: 5px;
+  }
+  #form_content{
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header-links{
+    text-decoration: none;
+    height: 48px;
+    margin-right: 0px;
+    margin-top: 10px;
+    float: right;
+    color: white;
+  }
+
+  .w3-bar .w3-bar-item {
+    padding: 8px 8px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+  .w3-sidebar li i{
+    margin-right: 5px;
+  }
+  
+  .col {
+    flex-basis: auto;
+  
+  }
+  #form_content{
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .header-links{
+    text-decoration: none;
+    height: 43px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 3px 3px;
+    float: right;
+    color: white;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .header-links{
+    text-decoration: none;
+    height: 48px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    float: right;
+    color: white;
+  }
+
+  .w3-bar .w3-bar-item {
+    padding: 8px 8px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+  .w3-sidebar{
+    top: 48px;
+  }
+
+  .w3-sidebar li i{
+    margin-right: 5px;
+  }
   .col {
     flex-basis: auto;
   
@@ -98,7 +211,31 @@ margin-left: 200px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 350px) {
+  .header-links{
+    text-decoration: none;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+    color: white;
+  }
+
+  .w3-bar .w3-bar-item {
+    padding: 8px 8px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+  .w3-sidebar{
+    top: 43px;
+  }
+
+  .w3-sidebar li i{
+    margin-right: 5px;
+  }
   .col {
     flex-basis: auto;
   
@@ -112,6 +249,8 @@ margin-left: 200px;
 }
 
 @media only screen and (min-width: 1200px) {
+
+  
   .col {
     flex-basis: 0;
   
@@ -119,49 +258,85 @@ margin-left: 200px;
 }
 
 
-#form_content{
-  background-color: #002C47;
-  padding: 20px 20px;
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 15px;
-  color: white;
-  opacity: 0.9;
+
+#form_content label{
+  font-weight: bold;
+  margin-top: 15px;
+
+  
 }
-#form_content p{
-  font-size: xx-large;
-   text-align: center;
+#form_content input[type=text],input[type=email],input[type=number]{
+ padding-left: 10px;
+ margin-top: 5px;
+ 
 }
 
-#form_content h6{
-  color: #cc0000;
-  text-align: end;
+#form_content textarea{
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+#form_content select{
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+#form_content h5{
+ margin-bottom: 20px;
+ font-weight: bolder;
 }
 
 #modal_icon_X{
-color: #fff;
-opacity: 0.9;
+color: black;
+font-size: small;
 }
 
-#details_table{
-  
-}
 #details_table thead{
-  margin-top: 20px;
-  background: linear-gradient(to left, #ff6666 0%, #cc0000 100%);
-  font-style: oblique;
-  font-size: large;
+
+  font-size: small;
   font-weight: bold;
-  color: white;
+  text-align: left;
+  color: black;
 }
 
 #details_table tbody{
-  margin-top: 20px;
-  background: linear-gradient(to right, #ffffff 0%, #0099ff 100%);
-  font-style: oblique;
+  font-size: small;
+  text-align: left;
   color: black;
 }
+
+#details_table thead th{
+ 
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+#details_table tbody td{
+  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+
+
+#add_balance_modal_body{
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+#add_balance_Modal label{
+
+  margin-bottom: 5px;
+  font-weight: bold;
+
+
+}
+#add_balance_input_text{
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
 
 
 

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Clients</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+
+<body>
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-top w3-left-align w3-large w3-flat-midnight-blue">
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="header-links-logo "><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
+    <a href="javascript:void(0)" class="header-links " onclick="openRightMenu()" ><i class="fa fa-cogs"></i></a>
+    <a href="#" class="header-links " ><i class="fa fa-user-circle-o"></i></a>
+    <a href="#" class="header-links " ><i class="fa fa-bell-o"></i></a>
+    
+    
+    
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding w3-hover-black w3-hide-large" title="Close Menu">
+  </a>
+  <a href="Dashboard.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
+  <a href="Client_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-line-chart"></i>Reports</li></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" id="w3_main">
+
+
+
+  <div class="table-head">
+    <p>Add Client</p> 
+    <div class="row">
+      <div class="col-6 mb-3">
+        <a href="add_client_form_page.html"><button class="btn btn-primary btn-sm " name="add_button">Add</button></a>
+      </div>
+    </div>         
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone No.</th>
+          <th>Country</th>
+          <th>Status</th>
+          <th>Created</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            
+            <a href="edit_client_form_page.html"><button class="btn btn-primary btn-sm mb-2 " name="edit_button">Edit</button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
+          </td>  
+        </tr>
+
+        <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000002</a></td>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            <a href="edit_client_form_page.html"><button class="btn btn-primary btn-sm mb-2 " name="edit_button">Edit</button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
+          </td> 
+        </tr>
+        <tr>
+          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000003</a></td>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>8732984798</td>
+          <td>India</td>
+          <td>Active</td>
+          <td>23-01-2020 6:34 PM</td>
+          <td>
+            
+            <a href="edit_client_form_page.html"><button class="btn btn-primary btn-sm mb-2 " name="edit_button">Edit</button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-default w3-flat-alizarin btn-sm mb-2">Delete</button>
+            <button type="button"  name="add_balnace" class="btn btn-default w3-flat-orange btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" >Add Balance</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--Modal Added 24-01-2020-->
+<div class="modal fade" id="add_balance_Modal" role="dialog">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h6 class="modal-title">Add Balance</h4>
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
+        
+      </div>
+
+      <div class="modal-body " id="add_balance_modal_body">
+        <div class="row">
+
+          <div class="col">
+            <label>Balance</label>
+        <input type="text" name="balance" id="add_balance_input_text" placeholder="Enter Amount">
+        </div>
+        <div class="col" >
+            <label>Amount</label>
+            <input type="text" id="add_balance_input_text" name="amount"  placeholder="Enter Balance">
+        </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <label>Description</label>
+            <textarea class="form-control" rows="2" placeholder=" Enter Description"></textarea>
+        </div>
+        </div>
+      </div>
+
+      <div class="modal-footer ">
+        <button type="button" class="btn-default btn-sm" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn-primary btn-sm" >Add</button>
+      </div>
+
+  </div>
+</div>
+
+</div>
+
+
+<!--Details Modal-->
+<div class="modal fade " id="details_Modal" role="dialog">
+  <div class=" modal-dialog modal-dialog-centered modal-lg ">
+    <div class="modal-content ">
+      <div class="modal-header ">
+        <h6 class="modal-title">Details</h6>
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
+        
+      </div>
+
+      <div class="modal-body ">
+        <table class="table table-borderless " id="details_table" >
+          <thead>
+            <tr class="row">
+              <th class="col-6">Name</th>
+              <th class="col-6">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr class="row">
+              <td class="col-6">John</td>
+              <td class="col-6">jhon@gmail.com</td>
+            </tr>
+          </tbody>
+          <thead >
+
+            <tr class="row">
+              <th class="col-6">Phone</th>
+              <th class="col-6">Address</th>
+              
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-6">8988278942</td>
+              <td class="col-6">
+                R-1, Himalaya Tanishq, Raj nagar extension, Ghaziabad
+                </td>
+              
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr class="row">
+              <th class="col-6">City</th>
+              <th class="col-6">State</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-6">Delhi</td>
+             <td class="col-6">Delhi</td>
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr class="row">
+              <th class="col-6">Pincode</th>
+              <th class="col-6">Country</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-6">110053</td>
+             <td class="col-6">India</td>
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr class="row">
+              <th class="col-6">Company</th>
+              <th class="col-6">Status</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-6">Logic Venture</td>
+             <td class="col-6">Active</td>
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr class="row">
+              <th class="col-6">Call Limit</th>
+              <th class="col-6">Pacing</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-6">50</td>
+             <td class="col-6">10</td>
+            </tr>
+
+          </tbody>
+          <thead>
+
+            <tr class="row">
+              <th class="col-12">Description</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row">
+              <td class="col-12">Test</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+        
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-primary" data-dismiss="modal">Close</button>
+
+      </div>
+  </div>
+</div>
+
+</div>
+
+
+<!--right Sidebar-->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-padding">Close &times;</button>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i> Account Settings</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
+  <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a><br>
+</div>
+</div>
+
+
+<!--right sidebar End-->
+
+<!-- END MAIN -->
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+
+</body>
+</html>
