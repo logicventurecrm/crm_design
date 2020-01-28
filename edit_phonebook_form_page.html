@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Edit Phone Book</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-top w3-left-align w3-large w3-flat-midnight-blue">
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="header-links-logo "><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
+    <a href="javascript:void(0)" class="header-links " onclick="openRightMenu()" ><i class="fa fa-cogs"></i></a>
+    <a href="#" class="header-links " ><i class="fa fa-user-circle-o"></i></a>
+    <a href="#" class="header-links " ><i class="fa fa-bell-o"></i></a>
+    
+    
+    
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-left w3-xlarge w3-hover-black w3-hide-large" title="Close Menu">
+    </a>
+    <a href="Dashboard.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
+    <a href="Client_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
+    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
+    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
+    <a href="Sound_library_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
+    <a href="Phone_book_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
+    
+    <button type="button" class="btn btn-default dropdown-toggle sidenav-links" data-toggle="dropdown">
+      <i class="fa fa-line-chart" id="sidenav-dropdown"></i> Reports
+    </button>
+    <div class="dropdown-menu w3-ios-light-grey mb-2 mt-2">
+      <a class="dropdown-item " href="#">Logs</a>
+      <a class="dropdown-item " href="#">Recharge</a>
+    </div>
+  </div>
+  </nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" id="w3_main">
+    <div class="w3-row w3-padding-64">
+        
+        <form class="form-group" id="form_content">
+            <h5 >Edit Phone Book</h5>
+              <div class="row">
+                  <div class="col">
+                      <label>Client</label>
+                      <select class="custom-select" id="sel1">
+                          <option value="8000003" >8000003 - Soni Jha</option>
+                          <option value="8000008" >8000008 - Shivam Kashyap</option>
+                          <option value="80000010" >80000010 - Ashish Thakur</option>
+                          <option value="80000013" >80000013 - Rahul Bandhu</option>
+                          <option value="80000018" >80000018 - Rohit Kumar</option>
+                          <option value="80000019" >80000019 - Rohan Kumar</option>
+                          <option value="80000021" >80000021 - Arti Jha</option>
+                          <option value="80000022" >80000022 - Nisha Jha</option>
+                          <option value="80000024" >80000024 - Client Jfsd</option>
+                          <option value="80000025" >80000025 - Client Jfsd</option>
+                          <option value="80000026" >80000026 - Shivam Kashyap</option>
+                          <option value="80000031" >80000031 - Mohan Kumar</option>
+                          <option value="80000035" >80000035 - clients </option>
+                          <option value="80000036" >80000036 - Jyoti Rani</option>
+                          <option value="80000037" >80000037 - Sohan Kumar</option>
+                          <option value="80000038" >80000038 - eeddd bhgbhygb</option>
+                          <option value="80000040" >80000040 - Jyoti Rani</option>
+                          <option value="80000041" >80000041 - Test Test</option>
+                          <option value="80000042" >80000042 - Clientone One</option>
+                          <option value="80000044" >80000044 - Jyoti Rani</option>
+                        </select>
+                  </div>
+                  <div class="col" >
+                      <label>Phone Book Name</label>
+                      <input type="text" name="pname" class="form-control" placeholder="Enter Phone Book">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col" >
+                      <label>Upload Contact</label>
+                      <div class="custom-file mb-3">
+                          <input type="file" class="custom-file-input" id="customFile" name="filename">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                  </div>
+              </div>
+          
+              <div class="row">
+                  <div class="col text-right mt-3">
+                      
+                          <input type="submit" name="submit" value="Create" class="btn btn-primary">
+                  </div>
+              </div>
+             
+          </form>
+
+
+
+        </div>
+        
+      </div>
+    
+<!--right Sidebar-->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-padding">Close &times;</button>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i> Account Settings</li></a><br>
+  <a href="Caller_id_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
+  <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a><br>
+</div>
+</div>
+
+
+<!--right sidebar End-->
+  
+  
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+
+</body>
+</html>

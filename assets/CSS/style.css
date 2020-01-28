@@ -15,6 +15,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif;}
   padding-left: 20px;
   
 }
+
+#sidenav-dropdown{
+  padding-left: 10px;
+  margin-top: 0px;
+}
 .w3-sidebar li i{
   margin-right: 10px;
 }
@@ -42,6 +47,31 @@ margin-left: 200px;
   color: #000000;
   text-decoration: none;
 }
+
+
+
+/* Icons Style*/
+
+.fa-search,.fa-edit,.fa-upload,.fa-user-plus,.fa-download{
+  font-size: 18px;
+  color: dodgerblue;
+}
+
+.fa-close,.fa-trash-o{
+  font-size: 18px;
+  color: red;
+
+}
+
+.fa-inr{
+  font-size: 18px;
+  color: green;
+
+}
+
+
+
+
 
 #main{
   background-color: #002C47;

@@ -33,16 +33,24 @@
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding w3-hover-black w3-hide-large" title="Close Menu">
-    </a>
-    <a href="Dashboard.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
-    <a href="Client_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-line-chart"></i>Reports</li></a>
-  </nav>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-left w3-xlarge w3-hover-black w3-hide-large" title="Close Menu">
+  </a>
+  <a href="Dashboard.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
+  <a href="Client_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
+  <a href="Sound_library_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
+  <a href="Phone_book_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
+  
+  <button type="button" class="btn btn-default dropdown-toggle sidenav-links" data-toggle="dropdown">
+    <i class="fa fa-line-chart" id="sidenav-dropdown"></i> Reports
+  </button>
+  <div class="dropdown-menu w3-ios-light-grey mb-2 mt-2">
+    <a class="dropdown-item " href="#">Logs</a>
+    <a class="dropdown-item " href="#">Recharge</a>
+  </div>
+</div>
+</nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -122,11 +130,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <div class="col-lg-12 mt-2 text-right">
-                            <input type="submit" name="submit" value="Create" class="btn btn-primary">
-                    </div>
-                </div>
+                  <div class="col mt-2 text-right">
+                      
+                          <input type="submit" name="submit" value="Add" class="btn btn-primary">
+                  
+              </div>
+             
                
             </form>
 
@@ -140,7 +149,7 @@
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
     <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-padding">Close &times;</button>
     <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i> Account Settings</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
+    <a href="Caller_id_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
     <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a><br>
     <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a><br>
   </div>

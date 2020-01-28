@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Add Switch</title>
+<title>Add Caller</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -60,56 +60,43 @@
     <div class="w3-row w3-padding-64">
         
             <form class="form-group" id="form_content">
-              <h5 >Add Switch</h5>
+              <h5 >Add Caller</h5>
                 <div class="row">
                     <div class="col">
-                        <label>Name</label>
-                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                        <label>Client</label>
+                        <select class="custom-select" id="sel1">
+                            <option value="8000003" >8000003 - Soni Jha</option>
+                            <option value="8000008" >8000008 - Shivam Kashyap</option>
+                            <option value="80000010" >80000010 - Ashish Thakur</option>
+                            <option value="80000013" >80000013 - Rahul Bandhu</option>
+                            <option value="80000018" >80000018 - Rohit Kumar</option>
+                            <option value="80000019" >80000019 - Rohan Kumar</option>
+                            <option value="80000021" >80000021 - Arti Jha</option>
+                            <option value="80000022" >80000022 - Nisha Jha</option>
+                            <option value="80000024" >80000024 - Client Jfsd</option>
+                            <option value="80000025" >80000025 - Client Jfsd</option>
+                            <option value="80000026" >80000026 - Shivam Kashyap</option>
+                            <option value="80000031" >80000031 - Mohan Kumar</option>
+                            <option value="80000035" >80000035 - clients </option>
+                            <option value="80000036" >80000036 - Jyoti Rani</option>
+                            <option value="80000037" >80000037 - Sohan Kumar</option>
+                            <option value="80000038" >80000038 - eeddd bhgbhygb</option>
+                            <option value="80000040" >80000040 - Jyoti Rani</option>
+                            <option value="80000041" >80000041 - Test Test</option>
+                            <option value="80000042" >80000042 - Clientone One</option>
+                            <option value="80000044" >80000044 - Jyoti Rani</option>
+                          </select>
                     </div>
                     <div class="col" >
-                        <label>IP</label>
-                        <input type="text" name="lname" class="form-control" placeholder="Enter IP">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label>Ami User</label>
-                    <input type="text" name="ami_user" class="form-control" placeholder="Enter Ami User" >
-                    </div>
-                    <div class="col" >
-                        <label>Ami Password</label>
-                        <input type="password" name="ami_password" class="form-control" placeholder="Enter Ami Password" >
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label>CPS</label>
-                        <input type="number" name="cps" class="form-control" placeholder="Enter CPS">
-                    </div>
-                    <div class="col" >
-                        <label>Call Limit</label>
-                    <input type="number" name="call_limit" class="form-control" placeholder="Enter Call Limit" >
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label>Description</label>
-                        <input type="text" name="description" class="form-control" placeholder="Enter Description">
-                    </div>
-                    <div class="col" >
-                        <label>Status</label>
-                    <select class="custom-select" id="sel1">
-                        <option>Active</option>
-                        <option>In-Active</option>
-                      </select>
+                        <label>Caller Id</label>
+                        <input type="text" name="caller_id" class="form-control" placeholder="Enter Caller Id">
                     </div>
                 </div>
             
                 <div class="row">
-                    <div class="col mt-2 text-right ">
-                        
-                            <input type="submit" name="submit" value="Create" class="btn btn-primary">
-                    
+                    <div class="col text-right mt-3">
+                        <button type="submit" class="btn btn-warning">Verify</button>
+                    </div>
                 </div>
                
             </form>

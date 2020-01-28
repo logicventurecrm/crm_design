@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Clients</title>
+<title>Sound Library</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,6 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
   <link rel="stylesheet" href="assets/CSS/style.css">
+  
 
 <body>
 
@@ -64,81 +65,77 @@
 
 
   <div class="table-head">
-    <p>Add Client</p> 
+    <p>Add Sound </p> 
     <div class="row">
       <div class="col-6 mb-3">
-        <a href="add_client_form_page.html"><button class="btn btn-primary btn-sm " name="add_button">Add</button></a>
+        <a href="add_sound_form_page.html"><button class="btn btn-primary btn-sm " name="add_button"><i class="fa fa-plus"></i> Sound</button></a>
       </div>
     </div>         
     <table class="table">
       <thead>
         <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone No.</th>
-          <th>Country</th>
+          <th>Client Id</th>
+          <th>Sound File Name</th>
+          <th>Audio</th>
           <th>Status</th>
-          <th>Created</th>
+          <th>Created Date</th>
           <th>Action</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
-          <td>John</td>
-          <td>john@example.com</td>
-          <td>8732984798</td>
-          <td>India</td>
+
+            <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
+          <td>Demo File Name</td>
+          <td><audio controls>
+              <source src="Sounds/SampleAudio.mp3" type="audio/mp3">
+          </audio></td>
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            
-            <a href="edit_client_form_page.html"><button class="btn btn-sm mb-2 " name="edit_button"><i class="fa fa-edit"></i></button></a>
-            <button type="button" value="Delete" name="delete" class="btn  btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
-            <button type="button"  name="add_balnace" class="btn  btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" ><i class="fa fa-inr"></i></button>
+            <a href="edit_sound_form_page.html"><button type="button"  name="edit" class="btn btn-sm mb-2" ><i class="fa fa-edit"></i></button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
           </td>  
         </tr>
 
         <tr>
-          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000002</a></td>
-          <td>John</td>
-          <td>john@example.com</td>
-          <td>8732984798</td>
-          <td>India</td>
+
+            <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
+          <td>Demo File Name</td>
+          <td><audio controls>
+              <source src="Sounds/SampleAudio.mp3" type="audio/mp3">
+          </audio></td>
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            
-            <a href="edit_client_form_page.html"><button class="btn btn-sm mb-2 " name="edit_button"><i class="fa fa-edit"></i></button></a>
-            <button type="button" value="Delete" name="delete" class="btn  btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
-            <button type="button"  name="add_balnace" class="btn  btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" ><i class="fa fa-inr"></i></button>
+            <a href="edit_sound_form_page.html"><button type="button"  name="edit" class="btn btn-sm mb-2" ><i class="fa fa-edit"></i></button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
           </td>  
         </tr>
+
+
         <tr>
-          <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000003</a></td>
-          <td>John</td>
-          <td>john@example.com</td>
-          <td>8732984798</td>
-          <td>India</td>
+
+            <td><a href="#" data-toggle="modal" data-target="#details_Modal">8000001</a></td>
+          <td>Demo File Name</td>
+          <td><audio controls>
+              <source src="Sounds/SampleAudio.mp3" type="audio/mp3">
+          </audio></td>
           <td>Active</td>
           <td>23-01-2020 6:34 PM</td>
           <td>
-            
-            <a href="edit_client_form_page.html"><button class="btn btn-sm mb-2 " name="edit_button"><i class="fa fa-edit"></i></button></a>
-            <button type="button" value="Delete" name="delete" class="btn  btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
-            <button type="button"  name="add_balnace" class="btn  btn-sm mb-2" data-toggle="modal" data-target="#add_balance_Modal" ><i class="fa fa-inr"></i></button>
+            <a href="edit_sound_form_page.html"><button type="button"  name="edit" class="btn btn-sm mb-2" ><i class="fa fa-edit"></i></button></a>
+            <button type="button" value="Delete" name="delete" class="btn btn-sm mb-2"><i class="fa fa-trash-o"></i></button>
           </td>  
         </tr>
       </tbody>
     </table>
   </div>
 </div>
-
 <!--Modal Added 24-01-2020-->
 <div class="modal fade" id="add_balance_Modal" role="dialog">
   <div class="modal-dialog ">
-    <div class="modal-content w3-animate-zoom">
+    <div class="modal-content">
       <div class="modal-header ">
         <h6 class="modal-title">Add Balance</h4>
         <button type="button" class="close" data-dismiss="modal"><i class="fa fa-remove " id="modal_icon_X"></i></button>
@@ -353,6 +350,8 @@ function openRightMenu() {
 function closeRightMenu() {
   document.getElementById("rightMenu").style.display = "none";
 }
+
+
 </script>
 
 </body>
