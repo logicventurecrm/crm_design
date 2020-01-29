@@ -24,7 +24,7 @@
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-top w3-left-align w3-large w3-flat-midnight-blue">
-    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large " href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars" onclick="myFunction(this)"></i></a>
     <a href="#" class="header-links-logo "><img src="images/logo.png" width="25px" height="25px">Logic Venture</a>
     <a href="javascript:void(0)" class="header-links " onclick="openRightMenu()" ><i class="fa fa-cogs"></i></a>
     <a href="#" class="header-links " ><i class="fa fa-user-circle-o"></i></a>
@@ -36,25 +36,58 @@
 </div>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left w3-ios-light-grey w3-padding" id="mySidebar" >
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-left w3-xlarge w3-hover-black w3-hide-large" title="Close Menu">
-    </a>
-    <a href="Dashboard.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-dashboard"></i> Dashboard</li></a><br>
-    <a href="Client_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-group"></i>Clients</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-send"></i>Compaign</li></a><br>
-    <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-database"></i>Tarrif</li></a><br>
-    <a href="Sound_library_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-music"></i>Sound Library</li></a><br>
-    <a href="Phone_book_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-address-book-o"></i>Phone Book</li></a><br>
-    
-    <button type="button" class="btn btn-default dropdown-toggle sidenav-links" data-toggle="dropdown">
-      <i class="fa fa-line-chart" id="sidenav-dropdown"></i> Reports
-    </button>
-    <div class="dropdown-menu w3-ios-light-grey mb-2 mt-2">
-      <a class="dropdown-item " href="#">Logs</a>
-      <a class="dropdown-item " href="#">Recharge</a>
-    </div>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left"  id="mySidebar">
+
+
+  <ul id="sidebar-ul">
+   
+    <li >
+      <a href="Dashboard.html" class="sidenav-links" id="create-button-sidenav">
+       <i class="fa fa-plus"></i> Create
+      </a> 
+    </li>
+
+      <li >
+        <a href="Dashboard.html" class="sidenav-links-active">
+          <i class="fa fa-dashboard"></i> Dashboard
+        </a> 
+      </li>
+      <li >
+        <a href="Client_page.html" class="sidenav-links">
+          <i class="fa fa-group"></i> Clients
+        </a> 
+      </li>
+      <li >
+        <a href="Dashboard.html" class="sidenav-links">
+          <i class="fa fa-send"></i> Compaign
+        </a> 
+      </li>
+      <li >
+        <a href="Dashboard.html" class="sidenav-links">
+          <i class="fa fa-database"></i> Tarrif
+        </a> 
+      </li>
+      <li >
+        <a href="Sound_library_page.html" class="sidenav-links">
+          <i class="fa fa-music"></i> Sound Library
+        </a> 
+      </li>
+      <li >
+        <a href="Phone_book_page.html" class="sidenav-links">
+          <i class="fa fa-address-book"></i> Phone Book
+        </a> 
+      </li>
+      <li >
+        <a href="Dashboard.html" class="sidenav-links">
+          <i class="fa fa-line-chart"></i> Reports
+        </a> 
+      </li>
+  
   </div>
   </nav>
+
+  </ul>
+
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -63,15 +96,23 @@
 <div class="w3-main" id="w3_main">
 
 
-
+  <div class="card" id="table-main-card" >
+    
   <div class="table-head">
-    <p>Add Phone Book </p> 
+    <p>Phone Book </p> 
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb color-primary">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active">Data</li>
+      </ol>
+    </nav>
     <div class="row">
       <div class="col-6 mb-3">
         <a href="add_phonebook_form_page.html"><button class="btn btn-primary btn-sm " name="add_button"><i class="fa fa-plus"></i> Phone Book</button></a>
       </div>
     </div>         
-    <table class="table">
+    <table class="table table-striped" id="myTable">
       <thead>
         <tr>
           <th>Client Id</th>
@@ -135,6 +176,7 @@
 
       </tbody>
     </table>
+    </div>
   </div>
 </div>
 
@@ -350,10 +392,10 @@
 <!--right Sidebar-->
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" id="rightMenu">
   <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-padding">Close &times;</button>
-  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i> Account Settings</li></a><br>
-  <a href="Caller_id_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a><br>
-  <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a><br>
-  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a><br>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-user"></i>Account Settings </li></a>
+  <a href="Caller_id_page.html" class="sidenav-links"><li class="sidenav-links" ><i class="fa fa-volume-control-phone"></i>Caller ID</li></a>
+  <a href="Switch_page.html" class="sidenav-links"><li class="sidenav-links"><i class="fas fa fa-hdd-o"></i>Switch</li></a>
+  <a href="#" class="sidenav-links"><li class="sidenav-links"><i class="fa fa-sign-out"></i>Logout</li></a>
 </div>
 </div>
 
@@ -361,6 +403,14 @@
 <!--right sidebar End-->
 
 <!-- END MAIN -->
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js">
+</script>
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
+</script>
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
@@ -393,8 +443,16 @@ function closeRightMenu() {
   document.getElementById("rightMenu").style.display = "none";
 }
 
+$(document).ready(function() {
+    var table = $('#myTable').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+} );
+
 
 </script>
-
 </body>
 </html>

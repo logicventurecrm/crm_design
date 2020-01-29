@@ -2,45 +2,78 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif;}
 
 .w3-sidebar {
   z-index: 3;
-  width: 200px;
+  width: 240px;
   top: 43px;
-  padding-top: 5px;
   bottom: 0;
-  float: none;
   height: inherit;
   background-color: #F4F5F7;
+  text-align: left;
 }
 .w3-sidebar li{
   list-style-type: none;
-  padding-left: 20px;
+  float: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
   
 }
+.w3-sidebar li #create-button-sidenav{
+  background-color: #F18627;
+  font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 2.75em;
+  text-align: center;
+  color: white;
 
-#sidenav-dropdown{
-  padding-left: 10px;
-  margin-top: 0px;
 }
-.w3-sidebar li i{
-  margin-right: 10px;
+#sidebar-ul{
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+
 }
+
+
 * {
   box-sizing: border-box;
 }
 #w3_main{
-margin-left: 200px;
+margin-left: 250px;
 }
 
 #rightMenu{
   display:none;
   right:0;
+ 
+}
+#rightMenu a li{
+  margin-left: 10px;
+  text-align: left;
+  margin-right: 10px;
+  padding: 12px 10px;
 }
 
 
 .sidenav-links{
   text-decoration: none;
-
   font-size: 17px;
  color: #818181;
+}
+.sidenav-links-active{
+  
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidenav-links-active:hover{
+  
+  color: #000000;
+  text-decoration: none;
 }
 
 .sidenav-links:hover{
@@ -67,6 +100,10 @@ margin-left: 200px;
   font-size: 18px;
   color: green;
 
+}
+.fa-eye{
+  font-size: 28px;
+  color: dodgerblue;
 }
 
 
@@ -112,7 +149,6 @@ margin-left: 200px;
 
 }
 .table-head{
-  margin-top: 150px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -331,7 +367,7 @@ font-size: small;
 
 #details_table tbody{
   font-size: small;
-  text-align: left;
+  text-align: justify;
   color: black;
 }
 
@@ -368,6 +404,24 @@ font-size: small;
 }
 
 
+#table-main-card{
+  background-color: #F4F5F7;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100px;
+}
+
+
+.side-nav-left{
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  padding-top: 5px;
+  padding-right: 50px;
+  float: none;
+  height: 80%;
+  background-color: #F4F5F7;
+}
 
 
 
